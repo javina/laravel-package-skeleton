@@ -1,0 +1,34 @@
+{
+    "name": "vendor/package",
+    "description": "Description Package",
+    "keywords": [
+        "Keyword1",
+        "Keyword2",
+        "laravel"
+    ],
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vendor Person",
+            "email": "vendor@mail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Vendor\\Package\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vendor\\Package\\PackageServiceProvider"
+            ],
+            "aliases": {
+                "Package": "Vendor\\Package\\Facade"
+            }
+        }
+    }
+}
